@@ -1,0 +1,20 @@
+---
+enable: true
+topTitle: About
+title: >
+  ## whoami
+
+  A Marine Corps Veteran, Computer Science Undergrad looking for purpose in Software Engineering. 
+content: >
+  ### I am a problem solver.
+
+  I enjoy challanges that comes with being a Software Engineer, 
+  its a puzzle in writing code. There is no better satisfaction, than having all pieces
+  come together and compile with no errors. 
+   
+# not needed----
+# button1Name: Hire me
+# button2Name: Download CV
+# button1Target: contact
+# button2Target: contact
+image: images/about/proj6.jpg
