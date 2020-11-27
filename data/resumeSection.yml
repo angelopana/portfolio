@@ -4,10 +4,10 @@ topTitle: My Resume
 title: >
   ## My Expertises
 
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore  
+  I have a plethora of skills and knowldged ranging from DevOps practice to Data Science, accumulated from my 
+  previous internships.
+  
 
-
-  Magna aliquyam erat, sed diam voluptua. At vero eos accusam justo.
 tab1Name: Education
 tab2Name: Experiences
 tab1Target: education
@@ -15,44 +15,61 @@ tab2Target: experience
 
 education:
   - content: >
-      #### Master in Arts
+      #### Bachelors of Science
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2008-2010
+      California State University San Marcos graduate in Computer Science.
+      Classes ranging from Data Structures, Cyber Secuirty, 
+      Embbeded Systems, Operating Systems, Web Development, 
+      and Database Management.
+    time: 2017-2019 | San Marcos, CA
   - content: >
-      #### Master in Arts
+      #### Community College
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2008-2010
+      General Education credits from Palomar Community College.
+
+    time: 2014-2017 | San Marcos, CA
   - content: >
-      #### Master in Arts
+      #### Weber Institute of Applied Science
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2008-2010
-  - content: >
-      #### Master in Arts
-
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2008-2010
+      Highschool graduate of Weber Institute of Applied Science, focus in Technology Academy. 
+    time: 2006-2010 | Stockton, CA
 
 experience:
   - content: >
-      #### Umbrella co. 
+      #### TechSLayers
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2016-Present
+      Development applications and tools for cleintele in areas of data acquisition, utilizing python and Ubot Studio.
+      Created automation scripts to decrease and customize backup process, using rClone and cron jobs on linux.
+
+    time: July 2020 – Present | Phoenix, AZ
+
   - content: >
-      #### Aperture Science 
+      #### Teradata
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2010-2016
+      Developed a documentation tool to ease DevOps hassles 
+      by minimizing time spent on documentation by automating documentation 
+      and deploying into a fully functional website.
+
+    time: May 2019 – Dec 2019 | Sn Diego, CA
   - content: >
-      #### ACME Inc. 
+      ##### Space & Naval Warfare Systems Command
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2005-2010
+      Generated datasets of building energy audit files, from building audit files for computer readability. 
+      Assisting in creating machine learning models by utilizing python.
+
+    time: Nov 2018 – May 2019 | San Diego, CA 
   - content: >
-      #### LexCorp 
+      #### Grossi Electric Inc. 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    time: 2001-2005
+      Built, installed and replace  industrial controllers with improved programmable logic controllers. 
+      Utilized ladder logic programming and reduced time, cost, testing and commissions.
+
+    time: July 2017 – Aug 2017 | Escalon, CA
+  - content: >
+      #### United States Marine Corps 
+
+      Performed and supervised technical functions in Naval Aviation Logistics Command Management Information Systems.
+      Managed up to two million dollars’ of classified equipment, in support of 10,000 
+      personnel in a span of eight months.
+      
+    time: Feb 2011 – June 2014 | Camp Pendleton, CA

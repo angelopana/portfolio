@@ -4,16 +4,19 @@ topTitle: My Skills
 content: >
   ## Why hire me for your next project?
 
-  My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+  My goal is to build a strong supportive professional network from coporatiosn to startups in order 
+  to develop applications and improve their performance.
 
-image: images/skill/go1.png
+image: images/skill/mando2.png
 
 skill:
-  - title: HTML
-    percent: 69
-  - title: CSS
-    percent: 60
-  - title: Javascript
-    percent: 85
-  - title: Golang
-    percent: 85
+  - title: Programming
+    percent: 82
+  - title: Database
+    percent: 50
+  - title: Web Development
+    percent: 58
+  - title: Management
+    percent: 75
+
+
