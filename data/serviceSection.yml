@@ -1,10 +1,9 @@
 ---
-enable: false
+enable: true
 topTitle: Skills
 title: >
   ##  Knowledge
 
-  I have a plethora of expertise of tools and programming languages.
 service:
   - content: >
       #### Programming
@@ -16,26 +15,35 @@ service:
       - C/C++
 
       - Java
-    image: /images/service/ui-ux.svg
+    image: "/images/skill/progLan.png"
   - content: >
       #### Web Development
 
-    image: "images/service/ui-ux.svg"
-  - content: >
-      #### Backend Development
+      - HTML
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/creative.svg
-  - content: >
-      #### Branding
+      - CSS
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/branding.svg
+      - Javascript
+
+    image: "images/skill/webDev.png"
   - content: >
       #### Database
 
-      Worked with Database management, using Sql, MySql and others.
-    image: images/service/creative.svg
+      - Sql
+
+      - MySql
+
+
+    image: "images/skill/db.png"
+  - content: >
+      #### Misc.
+
+      - Git
+      
+      - Docker
+
+      - Unix
+
+      - Jira
+    image: images/skill/misc.png
 

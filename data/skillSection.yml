@@ -10,7 +10,7 @@ content: >
 image: images/skill/mando2.png
 
 skill:
-  - title: Programming
+  - title: Development
     percent: 82
   - title: Database
     percent: 50
