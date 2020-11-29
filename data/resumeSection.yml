@@ -2,16 +2,16 @@
 enable: true
 topTitle: My Resume
 title: >
-  ## Experience
+  ## Previous experience
 
   I have a plethora of skills and knowledge ranging from DevOps practice to Data Science, accumulated from my 
   previous internships.
   
-
 tab1Name: Education
 tab2Name: Experiences
 tab1Target: education
 tab2Target: experience
+
 
 education:
   - content: >
@@ -35,12 +35,12 @@ education:
     time: 2006-2010 | Stockton, CA
 
 experience:
+
   - content: >
       #### TechSLayers
 
       Development applications and tools for clientele in areas of data acquisition, utilizing python and Ubot Studio.
       Created automation scripts to decrease and customize backup process, using rClone and cron jobs on Linux.
-
     time: July 2020 – Present | Phoenix, AZ
 
   - content: >
@@ -49,7 +49,6 @@ experience:
       Developed a documentation tool to ease DevOps hassles 
       by minimizing time spent on documentation by automating documentation 
       and deploying into a fully functional website.
-
     time: May 2019 – Dec 2019 | Sn Diego, CA
   - content: >
       ##### Space & Naval Warfare Systems Command
@@ -63,7 +62,6 @@ experience:
 
       Built, installed and replace industrial controllers with improved programmable logic controllers. 
       Utilized ladder logic programming and reduced time, cost, testing and commissions.
-
     time: July 2017 – Aug 2017 | Escalon, CA
   - content: >
       #### United States Marine Corps 
@@ -71,5 +69,5 @@ experience:
       Performed and supervised technical functions in Naval Aviation Logistics Command Management Information Systems.
       Managed up to two million dollars of classified equipment, in support of 10,000 
       personnel in a span of eight months.
-
     time: Feb 2011 – June 2014 | Camp Pendleton, CA
+
