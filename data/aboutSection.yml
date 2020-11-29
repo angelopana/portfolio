@@ -1,7 +1,7 @@
 ---
 enable: true
 topTitle: 
-title: >
+title: > 
   ## About me
 
   A Marine Corps Veteran, Computer Science Undergrad looking for purpose in Software Engineering. 
@@ -9,9 +9,9 @@ content: >
   ### I am a problem solver.
 
 
-  I enjoy the challenge that comes with being a software engineer. 
-  Not just the puzzle of writing code but writing clean and efficient code is what I enjoy the most. I
-  enjoy all of the aspects of programming but my favorite part is the end result, 
+  I enjoy the challenge that comes with being a software engineer,
+  not just the puzzle of writing code but writing clean and efficient code. I
+  love all aspects of programming though my favorite part is the end result, 
   where the puzzle pieces come together and compile with no errors.
 
 

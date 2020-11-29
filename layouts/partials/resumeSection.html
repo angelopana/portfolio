@@ -19,7 +19,6 @@
             </div>
             <div class="col-lg-6">
                 <div class="tab-content ">
-                        <!-- Education Panel     -->
                     <div class="resume__education tab-pane active" id="{{.tab1Target}}">
                         {{ $Section := .education }}
                         {{ range $Section }}
@@ -28,8 +27,9 @@
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
+
                     </div>
-                                <!-- Experince Panel     -->
+
                     <div class="resume__education tab-pane" id="{{.tab2Target}}">
                         {{ $Section := .experience }}
                         {{ range $Section }}

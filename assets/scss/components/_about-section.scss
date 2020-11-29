@@ -8,7 +8,6 @@
     &-thumb {
       width: 45%;
       position: relative;
-      right: -10%;
       @include desktop {
         width: 100%;
       }
@@ -31,7 +30,7 @@
       .about_content-thumb-image {
         img {
           height: 100%;
-          width: 72%;
+          width: 100%;
           &.about_mask_svg {
             mask: url(../images/about/about-mask-svg.svg);
             -webkit-mask-repeat: no-repeat;
@@ -44,7 +43,7 @@
     &-inner {
       width: 55%;
       padding: 60px 50px;
-      background: #232c49;
+      background: #1b2031;
       border-radius: 20px;
       margin-left: -60px;
       position: relative;
