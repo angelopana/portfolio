@@ -4,7 +4,7 @@ topTitle: My Resume
 title: >
   ## Experience
 
-  I have a plethora of skills and knowldged ranging from DevOps practice to Data Science, accumulated from my 
+  I have a plethora of skills and knowledge ranging from DevOps practice to Data Science, accumulated from my 
   previous internships.
   
 
@@ -18,8 +18,8 @@ education:
       #### Bachelors of Science
 
       California State University San Marcos graduate in Computer Science.
-      Classes ranging from Data Structures, Cyber Secuirty, 
-      Embbeded Systems, Operating Systems, Web Development, 
+      Classes ranging from Data Structures, Cyber Security, 
+      Embedded Systems, Operating Systems, Web Development, 
       and Database Management.
     time: 2017-2019 | San Marcos, CA
   - content: >
@@ -31,15 +31,15 @@ education:
   - content: >
       #### Weber Institute of Applied Science
 
-      Highschool graduate of Weber Institute of Applied Science, focus in Technology Academy. 
+      Highschool graduate of Weber Institute of Applied Science, focus on Technology Academy. 
     time: 2006-2010 | Stockton, CA
 
 experience:
   - content: >
       #### TechSLayers
 
-      Development applications and tools for cleintele in areas of data acquisition, utilizing python and Ubot Studio.
-      Created automation scripts to decrease and customize backup process, using rClone and cron jobs on linux.
+      Development applications and tools for clientele in areas of data acquisition, utilizing python and Ubot Studio.
+      Created automation scripts to decrease and customize backup process, using rClone and cron jobs on Linux.
 
     time: July 2020 – Present | Phoenix, AZ
 
@@ -61,7 +61,7 @@ experience:
   - content: >
       #### Grossi Electric Inc. 
 
-      Built, installed and replace  industrial controllers with improved programmable logic controllers. 
+      Built, installed and replace industrial controllers with improved programmable logic controllers. 
       Utilized ladder logic programming and reduced time, cost, testing and commissions.
 
     time: July 2017 – Aug 2017 | Escalon, CA
@@ -69,7 +69,7 @@ experience:
       #### United States Marine Corps 
 
       Performed and supervised technical functions in Naval Aviation Logistics Command Management Information Systems.
-      Managed up to two million dollars’ of classified equipment, in support of 10,000 
+      Managed up to two million dollars of classified equipment, in support of 10,000 
       personnel in a span of eight months.
-      
+
     time: Feb 2011 – June 2014 | Camp Pendleton, CA

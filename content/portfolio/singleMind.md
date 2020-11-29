@@ -2,8 +2,8 @@
 title: SingleMind
 date: 2019-05-13T12:49:27.000+06:00
 thumbnail: images/portfolio/singlemind.png
-service: Development, UX Design
-client: CS441 Project
+service: Andoird Dev, Java
+client: Software Engineer Project
 shortDescription: The idea of SingleMind is a very own on premises application to help the student 
   body of California State University San  Marcos, to manage their school workload. Ranging from but not limited too
   all school classes and hours, Exam Dates, Quizzes and due dates.  
