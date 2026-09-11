@@ -1,0 +1,111 @@
+#################### default parameters ############################
+# Everything here ends up in the public HTML. Never put secrets in this file.
+
+# favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
+favicon = "images/favicon.jpg"
+# logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
+# No logo image, so the header shows logo_text.
+logo = ""
+logo_darkmode = ""
+# use `px` or `x` with logo_width, example: "100px".
+logo_width = "160px"
+logo_height = "32px"
+logo_webp = true
+logo_text = "Angelo Pana"
+# navbar fixed to top
+navbar_fixed = true
+# theme-mode
+theme_switcher = true
+theme_default = "system" # available options [light/dark/system]
+# Main Sections
+mainSections = ["projects"]
+# No contact form on this site
+contact_form_action = ""
+google_tag_manager = ""
+google_adsense = ""
+# Injected into every page's <head>: a Content-Security-Policy (the only one GitHub Pages can serve)
+# and a referrer policy. Inline scripts are allowed because Hugoplate's search, dark mode and font
+# loader rely on them. Turned off under `hugo server` in config/development/hugo.toml.
+custom_script = '''<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">'''
+# copyright
+copyright = "© Angelo Pana. Built with [Hugoplate](https://github.com/zeon-studio/hugoplate)."
+
+# Preloader
+# preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
+[preloader]
+enable = false
+preloader = ""
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "GitHub"
+link = "https://github.com/angelopana"
+
+# search
+# search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
+[search]
+enable = true
+primary_color = "#121212"
+include_sections = ["projects"]
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
+
+# announcement
+# announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
+[announcement]
+enable = false
+expire_days = 7
+content = ""
+
+# seo meta data for OpenGraph / Twitter Card
+# seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
+[metadata]
+keywords = ["Angelo Pana", "software developer", "portfolio"]
+description = "Portfolio of Angelo Pana, an aspiring developer and Marine Corps veteran."
+author = "Angelo Pana"
+twitter = ""
+image = "images/headshot.jpg"
+
+# site verifications
+# verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
+[site_verification]
+google = ""
+bing = ""
+baidu = ""
+facebook = ""
+mastodon = ""
+
+# cookies
+# cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+[cookies]
+enable = false
+expire_days = 60
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["categories", "tags"]
+
+# google map (off; the contact page isn't used)
+[google_map]
+enable = false
+map_api_key = ""
+map_latitude = ""
+map_longitude = ""
+map_marker = ""
+
+# Subscription (off)
+[subscription]
+enable = false
+mailchimp_form_action = ""
+mailchimp_form_name = ""
+
+# OpenRemark comments (off)
+[open_remark]
+enable = false
+site_key = ""
+embed_url = "https://open-remark.zeon.studio/embed.js"

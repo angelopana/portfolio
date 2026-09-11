@@ -1,7 +1,7 @@
 # Response headers for Netlify / Cloudflare Pages. GitHub Pages ignores this file
-# (it cannot set headers), so there only the <meta> CSP in layouts/_partials/head.html applies.
+# (it cannot set headers), so there only the <meta> CSP from params.toml `custom_script` applies.
 /*
-  Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'self' https:; form-action 'none'; base-uri 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY

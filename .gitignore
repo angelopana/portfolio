@@ -1,4 +1,8 @@
 .DS_Store
+Thumbs.db
+
+# Dependencies (package-lock.json and go.sum are committed so builds are reproducible)
+node_modules/
 
 # Hugo build output and cache (the site is published from docs/)
 public/

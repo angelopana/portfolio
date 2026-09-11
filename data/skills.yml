@@ -1,8 +1,0 @@
-- group: Programming
-  items: [Go, Python, C/C++, Java]
-- group: Web development
-  items: [HTML, CSS, JavaScript]
-- group: Databases
-  items: [SQL, MySQL]
-- group: Tools
-  items: [Git, Docker, Unix, Jira]

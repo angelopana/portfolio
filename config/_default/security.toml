@@ -1,0 +1,12 @@
+[node]
+  [node.permissions]
+    allowAddons = ["tailwindcss"]
+    allowChildProcess = ["tailwindcss"]
+    # Only the project folder. Hugo 0.166+ walks every allowed root checking symlinks,
+    # so "/" (Hugoplate's default) makes it scan the whole disk and fail.
+    allowRead = ["."]
+    allowWorker = ["tailwindcss"]
+
+# Hugo 0.166+ also needs tailwindcss on the list of programs it may run.
+[exec]
+  allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
