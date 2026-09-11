@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="topbar">
+      {{- if not .IsHome }}
+      <a class="home" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+      {{- end }}
+      <nav aria-label="Sections">
+        <a href="{{ site.Home.RelPermalink }}#about">About</a>
+        <a href="{{ site.Home.RelPermalink }}#projects">Projects</a>
+        <a href="{{ site.Home.RelPermalink }}#experience">Experience</a>
+        <a href="{{ site.Home.RelPermalink }}#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+      <p>© {{ now.Year }} {{ site.Title }}</p>
+      <p class="footer-links">
+        <a href="{{ site.Params.github }}">GitHub</a>
+        <a href="{{ site.Params.linkedin }}">LinkedIn</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

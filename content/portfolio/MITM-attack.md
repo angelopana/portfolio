@@ -2,8 +2,8 @@
 title: Man In the Middle Attack
 date: 2019-12-02T18:07:16.000+06:00
 thumbnail: images/portfolio/MITM/pie_adapter.jpg
-service: Kali Linux, Secuirty
-client: Secuirty
+service: Kali Linux, Security
+client: Security
 shortDescription: Social Engineer and better to understanding Man In the Middle attacks.
 challenge: To better understand vulnerabilities by connecting into an open Wi-Fi network in public areas, 
   i.e airports or coffee shop, 

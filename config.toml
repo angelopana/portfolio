@@ -1,0 +1,14 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Angelo Pana"
+publishDir = "docs"
+disableKinds = ["taxonomy", "term", "rss"]
+
+# Everything in this file ends up in the public HTML. Never put secrets here.
+[params]
+headline = "Aspiring developer"
+tagline = "Team oriented | Cloud enthusiast | Veteran. Dedicated to accomplishing any task given."
+location = "Scottsdale, AZ"
+email = "angelo2.0ken@gmail.com"
+github = "https://github.com/angelopana"
+linkedin = "https://www.linkedin.com/in/angelopana/"
