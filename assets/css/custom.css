@@ -1,1 +1,10 @@
-/* Add your own custom styles here */
+/* Single-page site: keep section headings clear of the sticky header when jumping to #anchors. */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

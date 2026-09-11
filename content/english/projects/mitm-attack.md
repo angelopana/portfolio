@@ -11,11 +11,11 @@ tags: ["Kali Linux", "Raspberry Pi", "Wi-Fi Pumpkin"]
 draft: false
 ---
 
-## Challenge
+#### Challenge
 
 To better understand how connecting to an open Wi-Fi network in public areas, such as airports or coffee shops, can affect your security and privacy.
 
-## Solution
+#### Solution
 
 To simulate this problem, I introduced a Raspberry Pi with a USB-attached Wi-Fi adapter running Kali Linux to broadcast an open Wi-Fi network in a public area.
 

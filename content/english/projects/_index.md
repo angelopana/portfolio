@@ -1,10 +1,12 @@
 ---
 title: "Projects"
-meta_title: ""
-description: "Projects by Angelo Pana"
-outputs: ["HTML", "RSS"]
-# Reuse Hugoplate's blog layouts (cards, sidebar, single post) for this section.
-type: "blog"
+# Projects are shown in full on the home page; neither this section nor the
+# individual projects get pages of their own.
+build:
+  render: never
+  list: never
 cascade:
-  type: "blog"
+  build:
+    render: never
+    list: always
 ---

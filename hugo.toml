@@ -3,8 +3,9 @@
 baseURL = "/"
 # Title of your website (required).
 title = "Angelo Pana"
-# Built site goes to docs/ (published from there)
-publishDir = "docs"
+# Production builds go to docs/ (see config/production/hugo.toml); `hugo server` writes to public/
+# Single-page site: no category/tag pages or feeds
+disableKinds = ["taxonomy", "term", "rss"]
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -53,7 +54,7 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home     = ["HTML", "RSS", "SearchIndex"]
+home     = ["HTML"]
 page     = ["HTML"]
 section  = ["HTML"] # projects/_index.md adds RSS for itself
 taxonomy = ["HTML"]
@@ -136,9 +137,6 @@ link = "plugins/font-awesome/v6/icons.css"
 lazy = true
 
 # JS Plugins
-[[params.plugins.js]]
-link = "js/search.js" # https://github.com/gethugothemes/hugo-modules/tree/master/search
-lazy = false
 [[params.plugins.js]]
 link = "plugins/swiper/swiper-bundle.js" 
 # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider

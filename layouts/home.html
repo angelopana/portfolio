@@ -1,0 +1,113 @@
+{{- /* Single-page portfolio: every section lives on the home page, built from Hugoplate's own
+  banner, feature-block and call-to-action markup. Header menu items link to the section ids. */ -}}
+{{ define "main" }}
+  <!-- Banner -->
+  {{ with .Params.banner }}
+    <section class="section pt-14">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-7 md:col-9 mb-8 text-center">
+            <h1 class="mb-4 text-h3 lg:text-h1">
+              {{ .title | markdownify }}
+            </h1>
+            <p class="mb-8">
+              {{ .content | markdownify }}
+            </p>
+            {{ with .button }}
+              {{ if .enable }}
+                <a class="btn btn-primary" href="{{ .link }}">{{ .label }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-12">
+            {{ partial "image" (dict "Src" .image "Alt" "" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <!-- About -->
+  {{ with site.GetPage "/about" }}
+    <section id="about" class="section-sm bg-gradient">
+      <div class="container">
+        <div class="row items-center justify-between">
+          <div class="md:col-5 mb-6 md:mb-0">
+            {{ with .Params.image }}
+              {{ partial "image" (dict "Src" . "Alt" (printf "Portrait of %s" site.Title) "Class" "mx-auto rounded !max-w-80" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ end }}
+          </div>
+          <div class="md:col-7 lg:col-6">
+            <h2 class="mb-4">{{ .Title }}</h2>
+            <div class="content">{{ .Content }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <!-- Skills, experience, education: alternating image/text blocks -->
+  {{ range $i, $e := .Params.features }}
+    {{ $k := add $i 1 }}
+    <section
+      {{ with .id }}id="{{ . }}"{{ end }}
+      class="section-sm {{ if modBool $k 2 }}bg-gradient{{ end }}">
+      <div class="container">
+        <div class="row items-center justify-between">
+          <div class="md:col-5 mb-6 md:mb-0 {{ if not (modBool $k 2) }}md:order-2{{ end }}">
+            {{ partial "image" (dict "Src" .image "Alt" "" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+          </div>
+          <div class="md:col-7 lg:col-6 {{ if not (modBool $k 2) }}md:order-1{{ end }}">
+            <h2 class="mb-4">{{ .title | markdownify }}</h2>
+            <p class="mb-8 text-lg">{{ .content | markdownify }}</p>
+            <ul>
+              {{ range .bulletpoints }}
+                <li class="relative mb-4 pl-6">
+                  <i class="fa fa-check absolute left-0 top-1.5"></i>
+                  {{ . | markdownify }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <!-- Projects: each write-up shown in full -->
+  {{ $projects := (where site.RegularPages "Section" "projects").ByDate }}
+  {{ with $projects }}
+    <section id="projects" class="section bg-gradient">
+      <div class="container">
+        <div class="row">
+          <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+            <h2>{{ with site.GetPage "/projects" }}{{ .Title }}{{ else }}Projects{{ end }}</h2>
+          </div>
+        </div>
+        {{ range $i, $p := . }}
+          <article
+            id="{{ .File.ContentBaseName }}"
+            class="row items-center justify-between {{ if lt (add $i 1) (len $projects) }}mb-20{{ end }}">
+            <div class="md:col-5 mb-6 md:mb-0 {{ if modBool $i 2 }}md:order-2{{ end }}">
+              {{ with .Params.image }}
+                {{ partial "image" (dict "Src" . "Alt" "" "Class" "w-full rounded aspect-[4/3] object-cover object-top" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+              {{ end }}
+            </div>
+            <div class="md:col-7 lg:col-6 {{ if modBool $i 2 }}md:order-1{{ end }}">
+              <h3 class="mb-2">{{ .Title }}</h3>
+              <p class="mb-6 text-text-light dark:text-darkmode-text-light">
+                {{ with .Params.categories }}{{ delimit . ", " }}, {{ end }}{{ .Date.Format "January 2006" }}
+              </p>
+              <div class="content">{{ .Content }}</div>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <!-- Contact -->
+  <div id="contact">
+    {{ partial "call-to-action" . }}
+  </div>
+{{ end }}

@@ -13,10 +13,10 @@ draft: false
 
 The idea of SingleMind is an on-premises application to help the student body of California State University San Marcos manage their school workload, ranging from, but not limited to, all school classes and hours, exam dates, quizzes and due dates.
 
-## Challenge
+#### Challenge
 
 Helping students with time management, with an application that focuses only on education-based schedules.
 
-## Solution
+#### Solution
 
 Developed an application that parses a user's calendar of exams, classes, due dates and times, and imports them into a single source where users can easily view deadlines, clutter free.

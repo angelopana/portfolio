@@ -1,0 +1,4 @@
+# Only production builds (`npm run build` / `hugo`) write to docs/, the published site.
+# `hugo server` runs in development and writes to the gitignored public/ instead, so
+# previewing can never overwrite docs/ with localhost links and no security policy.
+publishDir = "docs"

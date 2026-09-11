@@ -1,6 +1,6 @@
 # Portfolio
 
-Angelo Pana's portfolio, built with [Hugo](https://gohugo.io) and the [Hugoplate](https://github.com/zeon-studio/hugoplate) theme (Tailwind CSS). The theme lives in `themes/hugoplate/` under its MIT license.
+Angelo Pana's single-page portfolio, built with [Hugo](https://gohugo.io) and the [Hugoplate](https://github.com/zeon-studio/hugoplate) theme (Tailwind CSS). The theme lives in `themes/hugoplate/` under its MIT license.
 
 ## Requirements
 
@@ -13,24 +13,30 @@ Angelo Pana's portfolio, built with [Hugo](https://gohugo.io) and the [Hugoplate
 ```sh
 npm install        # once, and after pulling dependency changes
 npm run dev        # preview at http://localhost:1313 (opens your browser, live reloads)
-npm run build      # build the site into docs/
+npm run build      # build the published site into docs/
 ```
+
+Previews write to the gitignored `public/` folder; only `npm run build` writes to `docs/` (see `config/production/hugo.toml`).
 
 ## Where things are
 
-- `content/english/_index.md`: home page banner and the three feature blocks
-- `content/english/about/_index.md`: About page
-- `content/english/projects/`: one Markdown file per project (images in `assets/images/portfolio/`)
-- `content/english/authors/angelo-pana.md`: author card shown on projects
-- `content/english/sections/call-to-action.md` and `testimonial.md` (testimonials are off until there are real ones)
-- `config/_default/params.toml`: header text, GitHub button, search, SEO description; everything here is public
-- `config/_default/menus.en.toml`: header and footer menus
+Everything is on one page (`layouts/home.html`), in this order:
+
+- Banner and the Skills, Experience and Education blocks: `content/english/_index.md` (each block's `id` is the anchor its menu link jumps to)
+- About: `content/english/about/_index.md` (text and portrait)
+- Projects: `content/english/projects/`, one Markdown file per project, shown in full (images in `assets/images/portfolio/`)
+- Contact: `content/english/sections/call-to-action.md` (`testimonial.md` is off until there are real testimonials)
+
+Settings:
+
+- `config/_default/params.toml`: header text, GitHub button, SEO description and the security policy; everything here is public
+- `config/_default/menus.en.toml`: header and footer links (`#section` anchors)
 - `data/social.json`: footer social links
 - `data/theme.json`: colors and fonts
-- `layouts/`: the few overrides of Hugoplate templates (About page portrait size, PWA turned off)
+- `layouts/_partials/`: small overrides of Hugoplate (style loading, PWA turned off)
 
 ## Security notes
 
-- `static/_headers` sets security headers on Netlify or Cloudflare Pages. GitHub Pages ignores it.
+- Every page gets a Content-Security-Policy and referrer policy from `custom_script` in `params.toml`. `static/_headers` adds more headers on Netlify or Cloudflare Pages; GitHub Pages ignores it.
 - The PWA service worker is turned off (`layouts/_partials/pwa.html`), so visitors never get a stale cached copy.
 - Raw HTML in Markdown is stripped (`hugo.toml`, `markup.goldmark.renderer.unsafe = false`).

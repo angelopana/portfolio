@@ -1,29 +1,45 @@
 ############# English navigation ##############
+# Single-page site: every item jumps to a section id on the home page.
 
 # main menu
 [[main]]
-name = "Home"
-url = "/"
+name = "About"
+url = "#about"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about/"
+name = "Skills"
+url = "#skills"
 weight = 2
 
 [[main]]
-name = "Projects"
-url = "/projects/"
+name = "Experience"
+url = "#experience"
 weight = 3
+
+[[main]]
+name = "Projects"
+url = "#projects"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "#contact"
+weight = 5
 
 
 # footer menu
 [[footer]]
 name = "About"
-url = "/about/"
+url = "#about"
 weight = 1
 
 [[footer]]
 name = "Projects"
-url = "/projects/"
+url = "#projects"
 weight = 2
+
+[[footer]]
+name = "Contact"
+url = "#contact"
+weight = 3
