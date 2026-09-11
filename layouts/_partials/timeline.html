@@ -1,0 +1,17 @@
+{{- /* Expects a list of {name, title, when, where, summary} from data/. */ -}}
+<ol class="timeline">
+  {{- range . }}
+  <li>
+    <p class="when">{{ .when }}{{ with .where }}<br>{{ . }}{{ end }}</p>
+    <div>
+      <h3>{{ .name }}</h3>
+      {{- with .title }}
+      <p class="role">{{ . }}</p>
+      {{- end }}
+      {{- with .summary }}
+      <p>{{ . }}</p>
+      {{- end }}
+    </div>
+  </li>
+  {{- end }}
+</ol>

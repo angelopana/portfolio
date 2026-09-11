@@ -1,0 +1,3 @@
+# Used only by `hugo server` (development environment). A full http:// URL makes the
+# "Web Server is available at ..." line a clickable link in the terminal.
+baseURL = "http://localhost:1313/"

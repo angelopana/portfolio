@@ -1,2 +1,6 @@
-config.toml
 .DS_Store
+
+# Hugo build output and cache (the site is published from docs/)
+public/
+resources/
+.hugo_build.lock

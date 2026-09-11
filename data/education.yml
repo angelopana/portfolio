@@ -1,0 +1,18 @@
+# Newest first. Fields: name, title, when, where, summary
+- name: California State University San Marcos
+  title: Bachelor of Science in Computer Science
+  when: 2017 – 2019
+  where: San Marcos, CA
+  summary: >
+    Coursework in data structures, cyber security, embedded systems, operating systems,
+    web development and database management.
+
+- name: Palomar Community College
+  title: General education credits
+  when: 2014 – 2017
+  where: San Marcos, CA
+
+- name: Weber Institute of Applied Science
+  title: High school, Technology Academy
+  when: 2006 – 2010
+  where: Stockton, CA
